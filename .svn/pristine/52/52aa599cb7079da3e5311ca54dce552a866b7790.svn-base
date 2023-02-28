@@ -1,0 +1,24 @@
+{
+  "platform": "mini-game",
+  "actualPlatform": "wechatgame",
+  "template": "default",
+  "buildPath": "E:\\GunFactory\\trunk",
+  "debug": false,
+  "sourceMaps": false,
+  "embedWebDebugger": false,
+  "previewWidth": "1280",
+  "previewHeight": "720",
+  "useDebugKeystore": false,
+  "keystorePath": "E:\\GunFactory\\keyStore\\ttlwk.keyStore",
+  "keystorePassword": "qdkj2019",
+  "keystoreAlias": "ttlwk",
+  "keystoreAliasPassword": "qdkj2019",
+  "apiLevel": "android-29",
+  "appABIs": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86"
+  ],
+  "vsVersion": "auto",
+  "buildScriptsOnly": false
+}

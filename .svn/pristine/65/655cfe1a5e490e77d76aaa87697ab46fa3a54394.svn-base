@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "8e58b1c3-596e-43ad-8a82-99a02c8a2e14",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 143,
+  "height": 78,
+  "platformSettings": {},
+  "subMetas": {
+    "bbq_desk2_1": {
+      "ver": "1.0.4",
+      "uuid": "67ceb6bf-d377-4c46-b6de-16643ef45612",
+      "rawTextureUuid": "8e58b1c3-596e-43ad-8a82-99a02c8a2e14",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 143,
+      "height": 77,
+      "rawWidth": 143,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

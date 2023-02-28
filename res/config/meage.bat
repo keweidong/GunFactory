@@ -1,0 +1,1 @@
+qdtool mergeimg -s ./ --target ../../GunFactory/assets/resources/config

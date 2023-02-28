@@ -1,0 +1,53 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "rightPopupOpen",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "ShopBtn": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "jt": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -67.519
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "height": [
+        {
+          "frame": 0,
+          "value": 100
+        },
+        {
+          "frame": 0.15,
+          "value": 100
+        }
+      ]
+    }
+  },
+  "events": []
+}

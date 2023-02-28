@@ -1,0 +1,9 @@
+int,int,string,string,string,int,float,int,int,string
+id,顾客模型,模型贴图（没有1）,名字,ai,总共吃多少菜,菜式价格加成倍率,解锁场景,解锁宣传等级,解锁条件的描述
+id,modelId,atlasAsset,name,aiFile,eatCnt,rate,scenceId,unlockguest,unlockdec
+0,1,customer_0_tex,贾大玲,star,8,1,0,-1,场景1宣传0解锁
+1,2,customer_0_tex,蔡小坤,star,10,1,1,0,场景2宣传1解锁
+2,3,customer_0_tex,小岳岳,star,12,1,2,1,场景3宣传2解锁
+3,4,customer_0_tex,大幂幂,star,13,1,3,2,场景4宣传3解锁
+4,5,customer_0_tex,杨小颖,star,14,1,4,3,场景5宣传4解锁
+5,6,customer_0_tex,陈赤赤,star,15,1,5,4,场景6宣传5解锁

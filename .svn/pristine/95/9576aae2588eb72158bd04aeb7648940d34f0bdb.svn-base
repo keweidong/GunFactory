@@ -1,0 +1,209 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
+    buildToolsVersion PROP_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "com.gzqidong.bbqgame"
+        minSdkVersion PROP_MIN_SDK_VERSION
+        targetSdkVersion PROP_TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0.0"
+
+        buildConfigField 'String', 'CHANNEL', '"cjkg"'
+
+
+//
+
+        ndk { abiFilters  'armeabi-v7a','x86','arm64-v8a' }
+
+        externalNativeBuild {
+            ndkBuild {
+                if (!project.hasProperty("PROP_NDK_MODE") || PROP_NDK_MODE.compareTo('none') != 0) {
+                    // skip the NDK Build step if PROP_NDK_MODE is none
+                    targets 'cocos2djs'
+                    arguments 'NDK_TOOLCHAIN_VERSION=clang'
+
+                    def module_paths = [project.file("../../../cocos2d-x"),
+                                        project.file("../../../cocos2d-x/cocos"),
+                                        project.file("../../../cocos2d-x/external")]
+                    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+                        arguments 'NDK_MODULE_PATH=' + module_paths.join(";")
+                    }
+                    else {
+                        arguments 'NDK_MODULE_PATH=' + module_paths.join(':')
+                    }
+                    
+                    arguments '-j' + Runtime.runtime.availableProcessors()
+                    abiFilters.addAll(PROP_APP_ABI.split(':').collect{it as String})
+                }
+            }
+        }
+    }
+
+    packagingOptions {
+        doNotStrip "*/armeabi-v7a/*.so"
+        doNotStrip "*/x86/*.so"
+        doNotStrip "*/arm64-v8a/*.so"
+//        doNotStrip "*/x86_64/*.so"
+//        doNotStrip "armeabi.so"
+    }
+
+    sourceSets.main {
+        java.srcDirs "../src", "src"
+        res.srcDirs "../res", 'res'
+        jniLibs.srcDirs "../libs", 'libs'
+        manifest.srcFile "AndroidManifest.xml"
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            if (!project.hasProperty("PROP_NDK_MODE") || PROP_NDK_MODE.compareTo('none') != 0) {
+                // skip the NDK Build step if PROP_NDK_MODE is none
+                path "jni/Android.mk"
+            }
+        }
+    }
+
+    signingConfigs {
+       release {
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                storeFile file(RELEASE_STORE_FILE)
+                storePassword RELEASE_STORE_PASSWORD
+                keyAlias RELEASE_KEY_ALIAS
+                keyPassword RELEASE_KEY_PASSWORD
+            }
+        }
+        debug {
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                storeFile file(RELEASE_STORE_FILE)
+                storePassword RELEASE_STORE_PASSWORD
+                keyAlias RELEASE_KEY_ALIAS
+                keyPassword RELEASE_KEY_PASSWORD
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                signingConfig signingConfigs.release
+            }
+
+            externalNativeBuild {
+                ndkBuild {
+                    arguments 'NDK_DEBUG=0'
+                }
+            }
+        }
+
+        debug {
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+            externalNativeBuild {
+                ndkBuild {
+                    arguments 'NDK_DEBUG=1'
+                }
+            }
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        game {
+            buildConfigField 'String', 'CHANNEL', '"bbqgame1"'
+            buildConfigField 'Boolean', 'SHOW_INTERATION', 'false'
+            buildConfigField 'String', 'RY_KEY', '"16821781b99ff2ee28d02785d2f61524"'
+//            applicationId "com.gzqidong.street"
+//            //applicationId "com.gzqidong.foodstreet2"
+//            ndk {
+//                abiFilters  "armeabi-v7a"
+//            }
+        }
+        game1 {
+            buildConfigField 'String', 'CHANNEL', '"bbqgame2"'
+            buildConfigField 'Boolean', 'SHOW_INTERATION', 'true'
+            buildConfigField 'String', 'RY_KEY', '"f349fe115f9f6c0d9ed3990b375375fd"'
+//            applicationId "com.gzqidong.street"
+//            //applicationId "com.gzqidong.foodstreet2"
+//            ndk {
+//                abiFilters  "armeabi-v7a"
+//            }
+        }
+        gm {
+            buildConfigField 'Boolean', 'SHOW_INTERATION', 'true'
+            buildConfigField 'String', 'RY_KEY', '"f349fe115f9f6c0d9ed3990b375375fd"'
+//            applicationId "com.gzqidong.street"
+//            //applicationId "com.gzqidong.foodstreet2"
+//            ndk {
+//                abiFilters  "armeabi-v7a", "x86"
+//            }
+        }
+    }
+}
+
+android.applicationVariants.all { variant ->
+    // delete previous files first
+    def list = variant.dirName.split("/");
+    //删除游戏资源文件
+    delete "${buildDir}/intermediates/merged_assets/${list[0] + list[1].capitalize()}";
+//    println  "打印的日志:${list[0] + list[1].capitalize() }"
+    variant.mergeAssets.doLast {
+        def sourceDir = "${buildDir}/../../../../.."
+
+        copy {
+            from "${sourceDir}/res"
+            into "${outputDir}/res"
+        }
+
+        copy {
+            from "${sourceDir}/subpackages"
+            into "${outputDir}/subpackages"
+        }
+
+        copy {
+            from "${sourceDir}/src"
+            into "${outputDir}/src"
+        }
+
+        copy {
+            from "${sourceDir}/jsb-adapter"
+            into "${outputDir}/jsb-adapter"
+        }
+
+        copy {
+            from "${sourceDir}/main.js"
+            from "${sourceDir}/project.json"
+
+            from "${sourceDir}/project.manifest"
+            from "${sourceDir}/supplierconfig.json"
+            into outputDir
+        }
+        println  "拷贝文件目标目录:${outputDir}"
+    }
+    variant.outputs.all {
+//        println  "打印的日志:${android.defaultConfig.versionName}"
+        //第一个参数：版本名 第二个参数:版本号
+        outputFileName = "GunFactory_${android.defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'//微信sdk
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'//穿山甲
+    implementation 'com.android.support:support-v4:26.0.0'
+    implementation fileTree(dir: "../../../cocos2d-x/cocos/platform/android/java/libs", include: ['*.jar'])
+    implementation project(':libcocos2dx')
+}

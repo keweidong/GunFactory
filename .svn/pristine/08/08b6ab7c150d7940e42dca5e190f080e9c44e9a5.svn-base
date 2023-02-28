@@ -1,0 +1,5 @@
+int,int,int,int,int
+消耗类型,消耗数量,上限次数,回复时间,奖励倍率
+costType,costValue,maxNum,cdTime,rate
+0,60,10,300000,1
+1,1,10,0,2

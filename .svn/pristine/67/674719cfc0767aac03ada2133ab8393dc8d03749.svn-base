@@ -1,0 +1,121 @@
+{
+	"game": {
+		/**
+		 * �˿���������
+		 */
+		"customer": {
+			"speed": 5,
+			"enterRate": 0.5,
+			"nextRateEquation": "r/2",
+			"minCostTime": 0.5,
+			"maxRankCnt": 8,
+			"createCustomerBaseTime": 1000,
+			"createCustomerChangeTime": 2000,
+			"accelerateCnt": 500,
+			"eventRate": 0.1,
+			"eventAwards": [0, 1, 20]
+		},
+		"happy": {
+			"time": 30000,
+			"buff": [60001, 60002, 60003, 60004, 60005],
+			"buffValue": [200, 200, 200, 200, 200],
+			"maxValue": 10,
+			"num": 10,
+			"rate": 0.25
+		},
+		"plotEventConf": {
+			"clienteventtime": 120000,
+			"randomshowgukeevent": 0.2,
+			"chatrandom": 0,
+			"chatspeed": 1200
+		},
+		"startEventConf": {
+			"stareventtime": 90000,
+			"randnumber": 0.1,
+			"hideStarTime": 30000
+		},
+		"randAdBtn":{
+			"randnumber":5,
+			"addrandnum":2
+		},
+		"exploreConf":{
+			"exploreTime":180000
+		},
+		//��������
+		"gift": {
+			//��Ʊ������
+			"coin": 150,
+			//������?
+			"diamond": 50
+		},
+		//��Ұ���ʦ���ٱ���?
+		"chefTouchSpeedRate": 3,
+		"gametime": {
+			"zoomtime": 30,
+			"gamestarttime": 1580518800000
+		},
+		"maxOfflineTime": 28800
+	},
+	/**
+	 * �Զ����������������?
+	 */
+	"interactionAd": {
+		/**
+		 * ����ʱ�䳬�����ٺ�ʼ̸�������?
+		 */
+		"startShowTime": 180000,
+		/**
+		 * ������浯�����ʱ��
+		 */
+		"paddingTime": 30000,
+		/**
+		 * ������嵯���������ĸ���?
+		 */
+		"view": {
+			"SevenDaysView":1,
+			"IdleView":0.3,
+			"UpgradeView":0.2,
+			"ShopView":0.2,
+			"SettingView":0.2,
+			"TaskView":0.2,
+			"LuckBagView":0.2,
+			"HappyMoneyView":0.2,
+			"FriendCircleView":0.2,
+			"StartShowView":0.2
+			
+			
+		}
+	},
+	/**
+	 * ��ɫ������
+	 */
+	"featureFood": {
+		/**
+		 * ��ɫ�˿�������ʱ����
+		 */
+		"time": 180000,
+		/**ÿ������������ٵ���ɫ��?*/
+		"createCnt": 10
+	},
+	/**
+	 * ���buff����
+	 */
+	"freeBuff": {
+		//��������Ʒid
+		"itemId": 21
+	},
+	/**
+	 * ��ʦ�Զ�����buff����
+	 */
+	"cookAutoAccelerate": {
+		//��������Ʒid
+		"itemId": 29
+	},
+
+	"serverInfos": {
+		"serverid": "ww01",
+		//"interface": "https://skewer.gzqidong.cn/Tt"
+		"interface": "https://skewer.gzqidong.cn/Wx"
+	},
+	"channel": "cjkg"
+}

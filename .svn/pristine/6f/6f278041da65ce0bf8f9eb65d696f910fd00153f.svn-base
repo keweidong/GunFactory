@@ -1,0 +1,276 @@
+{
+	"s200": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "192.168.0.200",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "debug"
+		},
+		"versionSaveCnt": 20,
+		"uploadPath": "/var/www/html/GunFactory/",
+		"REMOTE_SERVER_ROOT": "http://192.168.0.200/GunFactory",
+		"version": "1.0.0"
+	},
+	"test": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "test"
+	},
+	"xueyuan": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "xueyuan"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "xueyuan"
+	},
+	"xueyuan_desk": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "xueyuan_desk"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "xueyuan"
+	},
+	"wencong": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "wencong"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "wencong"
+	},
+	"wencong_desk": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "wencong_desk"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "wencong"
+	},
+	"OperateTest_desk": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "operateTest_desk"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "operateTest"
+	},
+	"OperateTest": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "operateTest"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "operateTest"
+	},
+	"cibin": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "cibin"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "cibin"
+	},
+	"cibin_desk": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "cibin_desk"
+		},
+		"versionSaveCnt": 20,
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "cibin"
+	},
+	"release_1.0.0": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "1.0.5",
+		"forceUpdate": "1.0.0"
+	},
+	"gm": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "gm",
+		"forceUpdate": "1.0.0"
+	},
+	"ios_release": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "ios1.0.7",
+		"forceUpdate": "ios1.0.0"
+	},
+	"qq_game": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "release1.0.9"
+	},
+	"toutiao_game": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 20,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "1.0.8"
+	},
+	"oppoGame": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 5,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "1.0.0"
+	},
+	"gm_desk": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "gm_desk"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 1,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "gm_desk"
+	},
+	"WxGame": {
+		"gameKey": "GunFactory",
+		"rsyncConf": {
+			"host": "118.126.93.71",
+			"user": "qidong",
+			"password": "gzqd@20171",
+			"module": "GunFactory",
+			"dir": "release"
+		},
+		"isDefault": "default",
+		"versionSaveCnt": 5,
+		"uploadPath": "/srv/htpdocs/GunFactory/",
+		"OSS_ROOT": "https://qidong-1257172471.cos.ap-guangzhou.myqcloud.com",
+		"REMOTE_SERVER_ROOT": "https://wxclient.gzqidong.cn/GunFactory",
+		"version": "wx_1.0.1"
+	}
+}

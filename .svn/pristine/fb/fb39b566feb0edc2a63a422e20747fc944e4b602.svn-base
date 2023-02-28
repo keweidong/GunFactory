@@ -1,0 +1,32 @@
+store_scene_progress_user_level,玩家等级达到{1}级
+store_scene_progress_publicity_level,宣传等级达到{1}级
+store_scene_progress_waiter_speed,服务员速度等级达到{1}级
+store_scene_progress_chef_speed,厨师速度等级达到{1}级
+store_scene_progress_dish_level,{1}个烤品达到{0}级
+home_ui_chef,厨师
+home_ui_waiter,员工
+home_ui_guest,宣传
+home_ui_speed,速度 <color=#ffe156><size=22> +{0}%</size></color>
+common_level_full,满级
+home_ui_number,数量 <color=#ffe156><size=22>{0}</size></color>
+common_per_second,{0}/秒
+common_level_up,升级
+common_use,使用
+common_buy,购买
+common_get,领取
+common_loading,加载中
+idle_tip,欢迎回来，店长！在您离线期间你的员工为您赚取了：
+common_diamond,钻石
+common_coin,现金
+store_scene_unlock_function,解锁新功能
+store_scene_unlock_condition,解锁条件
+store_buy_tip,是否购买{0}
+store_use_tip,是否使用{0}
+scene_map_unlock_level,{0}级解锁
+common_year,年
+common_month,月
+common_day,日
+common_hour,小时
+common_minute,分钟
+common_second,秒
+buff_desc,在{0}内菜式收益增加{1}%

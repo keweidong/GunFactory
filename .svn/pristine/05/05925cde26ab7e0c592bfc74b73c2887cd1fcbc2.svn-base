@@ -1,0 +1,197 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "mxll",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.75,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "mxll_1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.1,
+                "y": 1.1
+              }
+            },
+            {
+              "frame": 0.4,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.1,
+                "y": 0.9952380952380953
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.1,
+                "y": 1.1
+              }
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": -6
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "laba03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.25,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.75,
+              "value": 0,
+              "curve": "constant"
+            }
+          ]
+        }
+      },
+      "laba04": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.4,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 0,
+              "curve": "constant"
+            }
+          ]
+        }
+      },
+      "laba05": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.4,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0,
+              "curve": "constant"
+            }
+          ]
+        }
+      },
+      "highlight": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.1,
+                "y": 0.1
+              },
+              "curve": "linear"
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 2,
+                "y": 2
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 2.5,
+                "y": 2.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

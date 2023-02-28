@@ -1,0 +1,7 @@
+int,int,int,string,string,string,int
+ID,类型(0为),index,按钮描述,描述,图片,
+id,type,index,btnDes,des,icon,
+0,0,0,下一页,卡片里隐藏着炸弹或奖励,card2,
+1,0,1,下一页,选到炸弹，会失去所有奖励,item1,
+2,0,2,下一页,随时都可以点击按钮，带着奖池里的所有奖励结束本次探索,smy1,
+3,0,3,探索开始,卡片里隐藏着炸弹或奖励,hjbs,

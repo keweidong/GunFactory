@@ -1,0 +1,1945 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "6dfaa2eb-08f7-423b-8732-ecb7acf486b7",
+  "title": "新手引导",
+  "description": "",
+  "root": "8bd47ae1-97d7-4895-be8d-b008ce97c9fc",
+  "properties": {},
+  "nodes": {
+    "8bd47ae1-97d7-4895-be8d-b008ce97c9fc": {
+      "id": "8bd47ae1-97d7-4895-be8d-b008ce97c9fc",
+      "name": "MemPriority",
+      "category": "composite",
+      "title": "MemPriority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 188,
+        "y": 0
+      },
+      "children": [
+        "3e5d2a02-41f3-40b2-9e4e-5944b366a85a"
+      ]
+    },
+    "4a2ca767-ae45-4327-b2d4-d6beeb5d3ead": {
+      "id": "4a2ca767-ae45-4327-b2d4-d6beeb5d3ead",
+      "name": "NGAWaitTouch",
+      "category": "action",
+      "title": "等待玩家点击，<args>",
+      "description": "等待玩家点击,这是一个延时动作,玩家没有点击之前会返回running,\n点击后返回success\nargs:点击节点路径\ntime:超时时间,超过时间会自动返回success,单位毫秒",
+      "properties": {
+        "args": "UI_Popup/AwardView/eventbg/New Button",
+        "time": 5000,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 2073.34093759968,
+        "y": 13166.70838422328
+      }
+    },
+    "3e5d2a02-41f3-40b2-9e4e-5944b366a85a": {
+      "id": "3e5d2a02-41f3-40b2-9e4e-5944b366a85a",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "id3",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 0
+      },
+      "children": [
+        "7074b7f2-4203-47aa-8116-3d63810eedeb",
+        "3108cb65-5db6-4743-848f-e3df3ff60f54"
+      ]
+    },
+    "7074b7f2-4203-47aa-8116-3d63810eedeb": {
+      "id": "7074b7f2-4203-47aa-8116-3d63810eedeb",
+      "name": "NGCCheckIsOpen",
+      "category": "condition",
+      "title": "新手引导开启条件,id:<id>",
+      "description": "检查新手能否开启\n参数：\nid：新手引导id 唯一\nheart：开启条件，爱心值达到x\ncell：开启条件，开启猫舍x\nlevel：开启条件，猫舍达到x级",
+      "properties": {
+        "id": 1,
+        "userLevel": 0
+      },
+      "display": {
+        "x": 604,
+        "y": -1580.1739130434783
+      }
+    },
+    "82e5b742-aec1-4712-9e24-6e2bef6a6951": {
+      "id": "82e5b742-aec1-4712-9e24-6e2bef6a6951",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 812,
+        "y": 1580.1739130434783
+      },
+      "children": [
+        "ee5fe094-1645-4e18-974e-c029b69ae608",
+        "7fc47df9-48cd-4111-8bb8-a855467a48ab",
+        "4c4ae6f0-575f-455d-aaaa-c79174abb836",
+        "56f2ed8f-fdff-4d01-9cca-832933b9f9bc",
+        "427ea49c-1c1e-44eb-8c70-3d02db0e1ba9",
+        "1770e9aa-3b9b-4b15-b57b-86de63da7409",
+        "91f7954e-fdfa-4141-a3c3-0dd153f9f66f",
+        "7ae2e0ac-d429-4837-8bca-5a594efa78e3",
+        "671e57cc-2380-4d47-9d19-8e7413f545dd",
+        "9bd8337e-46db-4f29-b8a7-f0f07f45a975",
+        "d038a5a3-d8ea-430d-87e0-ffa2f733bb97",
+        "d531b0bb-9565-452d-83c4-c51b5ee08457",
+        "dc9bd55b-a36a-4cce-82d9-b44cbf728dda",
+        "fc7d1879-404b-47ad-806c-68eb4c2543df",
+        "8ace58b2-1d50-4223-97b7-8dd1dfc8963a",
+        "40c71586-2cfe-47a6-9d40-9379913d043e",
+        "17455cc6-775e-4254-81e2-bc66d3391cec",
+        "3dfec62f-0c63-4064-971d-935cbcce2cb7",
+        "fdab326f-0f68-4e3c-9b49-cbc115cc7cb2",
+        "59e1f5d3-f540-4507-ad6d-e63da13889a2",
+        "1dd493a8-ac2d-4f8d-825b-ba0aa90a2f5d",
+        "0533b04e-50fe-4a81-86ee-02ff63ef724b",
+        "28260010-6f52-49f0-9220-26d9030779b2"
+      ]
+    },
+    "ee5fe094-1645-4e18-974e-c029b69ae608": {
+      "id": "ee5fe094-1645-4e18-974e-c029b69ae608",
+      "name": "NGCCheckStep",
+      "category": "condition",
+      "title": "判断引导步骤，id:<id>，step:<step>",
+      "description": "",
+      "properties": {
+        "id": 1,
+        "step": 0
+      },
+      "display": {
+        "x": 1020,
+        "y": -1492.1739130434783
+      }
+    },
+    "b0ac6dcb-b502-40d3-8e82-cfcaeac682d3": {
+      "id": "b0ac6dcb-b502-40d3-8e82-cfcaeac682d3",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "来看一下第一位顾客要吃点什么吧！",
+        "isLeft": 1,
+        "pos": "b150",
+        "ani": "l",
+        "armatureName": "",
+        "isTouchNext": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 179.82608695652175
+      }
+    },
+    "b9d0c3e4-a4fa-4751-8210-23312671a640": {
+      "id": "b9d0c3e4-a4fa-4751-8210-23312671a640",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "【下单】以后，厨师会接单【做菜】",
+        "isLeft": 1,
+        "aniName": "",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 1059.8260869565217
+      }
+    },
+    "3108cb65-5db6-4743-848f-e3df3ff60f54": {
+      "id": "3108cb65-5db6-4743-848f-e3df3ff60f54",
+      "name": "MemPriority",
+      "category": "composite",
+      "title": "MemPriority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 604,
+        "y": 1580.1739130434783
+      },
+      "children": [
+        "82e5b742-aec1-4712-9e24-6e2bef6a6951"
+      ]
+    },
+    "b1c35507-6cac-4321-8122-250d43f5673a": {
+      "id": "b1c35507-6cac-4321-8122-250d43f5673a",
+      "name": "NGAWaitTouch",
+      "category": "action",
+      "title": "等待玩家点击，<args>",
+      "description": "等待玩家点击,这是一个延时动作,玩家没有点击之前会返回running,\n点击后返回success\nargs:点击节点路径\ntime:超时时间,超过时间会自动返回success,单位毫秒",
+      "properties": {
+        "args": "UI_Main/GameUIView/DateSp/New Button",
+        "time": 5000,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1224.000680979076,
+        "y": 19260.925442927997
+      }
+    },
+    "59ba6dd2-f997-4bc5-bf84-681c84858bde": {
+      "id": "59ba6dd2-f997-4bc5-bf84-681c84858bde",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "createGuideCustomer"
+      },
+      "display": {
+        "x": 1228,
+        "y": -172.17391304347825
+      }
+    },
+    "8b11b125-111a-4ac3-98f8-5749a1dc5d24": {
+      "id": "8b11b125-111a-4ac3-98f8-5749a1dc5d24",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": 0,
+        "notificationConst": "NEXT_STEP"
+      },
+      "display": {
+        "x": 1228,
+        "y": -84.17391304347825
+      }
+    },
+    "b05d5942-2414-4195-9cb4-04903b4d7313": {
+      "id": "b05d5942-2414-4195-9cb4-04903b4d7313",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "pauseAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 267.82608695652175
+      }
+    },
+    "865dbaae-2692-48d3-9058-badb9e43020d": {
+      "id": "865dbaae-2692-48d3-9058-badb9e43020d",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "resumeAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 707.8260869565217
+      }
+    },
+    "b5d4fb91-fbd6-4dbc-8fb6-04bb05fb76de": {
+      "id": "b5d4fb91-fbd6-4dbc-8fb6-04bb05fb76de",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": "NEXT_STEP"
+      },
+      "display": {
+        "x": 1228,
+        "y": 795.8260869565217
+      }
+    },
+    "55569500-e88d-4055-8ac3-e63e722e4e01": {
+      "id": "55569500-e88d-4055-8ac3-e63e722e4e01",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "pauseAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 1147.8260869565217
+      }
+    },
+    "2122bea6-cdeb-43a3-b143-45d7b80f16b7": {
+      "id": "2122bea6-cdeb-43a3-b143-45d7b80f16b7",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "resumeAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 1587.8260869565217
+      }
+    },
+    "02b93483-995d-4a99-85be-90116a77f60a": {
+      "id": "02b93483-995d-4a99-85be-90116a77f60a",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView>UILayer/OrderBox",
+        "opacity": 150,
+        "type": 0,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 971.8260869565217
+      }
+    },
+    "dcf4f0f2-4161-4aeb-8451-6ae27d5de9d1": {
+      "id": "dcf4f0f2-4161-4aeb-8451-6ae27d5de9d1",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */-220\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 443.82608695652175
+      }
+    },
+    "c3ca027f-759c-405a-9162-a98e513ebeef": {
+      "id": "c3ca027f-759c-405a-9162-a98e513ebeef",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 1235.8260869565217
+      }
+    },
+    "dc46872d-08b5-4f68-8320-cdd88a5db383": {
+      "id": "dc46872d-08b5-4f68-8320-cdd88a5db383",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "【长按】此处，会加快厨师【做菜】",
+        "isLeft": 1,
+        "pos": "v-100",
+        "ani": "l",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 1499.8260869565217
+      }
+    },
+    "38d108ff-781f-4ff8-9e96-e70fd8e67270": {
+      "id": "38d108ff-781f-4ff8-9e96-e70fd8e67270",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView/ScrollView/view/GameContent/GameView/UILayer/TouchCoodAccelerateNode",
+        "opacity": 150,
+        "type": 1,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 1411.8260869565217
+      }
+    },
+    "2b2093a6-ff55-4ccf-8f7e-16e51c9cea81": {
+      "id": "2b2093a6-ff55-4ccf-8f7e-16e51c9cea81",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": "ORDER_COOK_FINISH"
+      },
+      "display": {
+        "x": 1228,
+        "y": 1675.8260869565217
+      }
+    },
+    "2f237dff-b296-4d01-8c70-41d37898299e": {
+      "id": "2f237dff-b296-4d01-8c70-41d37898299e",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "收集【好评】，可以开启【热卖】",
+        "isLeft": 1,
+        "aniName": "",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 2291.826086956522
+      }
+    },
+    "cf70d35a-d62a-47d8-81a9-53a178f4c784": {
+      "id": "cf70d35a-d62a-47d8-81a9-53a178f4c784",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "createStar"
+      },
+      "display": {
+        "x": 1228,
+        "y": 1939.8260869565217
+      }
+    },
+    "7bd895d7-30a9-465b-bef8-f97eb8c7e0e2": {
+      "id": "7bd895d7-30a9-465b-bef8-f97eb8c7e0e2",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 2995.826086956522
+      }
+    },
+    "8aa9e61c-2cac-42ec-8330-49e9567e8a84": {
+      "id": "8aa9e61c-2cac-42ec-8330-49e9567e8a84",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": "NEXT_STEP"
+      },
+      "display": {
+        "x": 1228,
+        "y": 1851.8260869565217
+      }
+    },
+    "fabfa802-78c1-4b92-b44c-e348e7751288": {
+      "id": "fabfa802-78c1-4b92-b44c-e348e7751288",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView>GameView/UILayer/Happy",
+        "opacity": 150,
+        "type": 0,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 2203.826086956522
+      }
+    },
+    "82d4e4b6-7cba-4319-8ab0-09a35326e260": {
+      "id": "82d4e4b6-7cba-4319-8ab0-09a35326e260",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView>GameView>table0/TableImg/food2",
+        "opacity": 150,
+        "type": 0,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 2731.826086956522
+      }
+    },
+    "680161fd-148d-43ca-ba02-fc990a48c0df": {
+      "id": "680161fd-148d-43ca-ba02-fc990a48c0df",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "收拾盘子，下位顾客才能坐下点单",
+        "isLeft": 1,
+        "aniName": "",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 2819.826086956522
+      }
+    },
+    "378438ea-9c03-4058-bd4c-05774234c73c": {
+      "id": "378438ea-9c03-4058-bd4c-05774234c73c",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": 0,
+        "notificationConst": "NEXT_STEP"
+      },
+      "display": {
+        "x": 1228,
+        "y": 2027.8260869565217
+      }
+    },
+    "4cc61864-03b6-464f-aa72-334c4351e042": {
+      "id": "4cc61864-03b6-464f-aa72-334c4351e042",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "点击【队伍】可以快速增加【顾客】",
+        "isLeft": 1,
+        "aniName": "",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 3259.826086956522
+      }
+    },
+    "b482e1fb-e154-4c37-8ff2-2d22bbfa8a82": {
+      "id": "b482e1fb-e154-4c37-8ff2-2d22bbfa8a82",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView/ScrollView/view/GameContent/GameView/RoleLayer/formationT",
+        "opacity": 150,
+        "type": 1,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 3171.826086956522
+      }
+    },
+    "59e1f5d3-f540-4507-ad6d-e63da13889a2": {
+      "id": "59e1f5d3-f540-4507-ad6d-e63da13889a2",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 3479.826086956522
+      },
+      "children": [
+        "b482e1fb-e154-4c37-8ff2-2d22bbfa8a82",
+        "4cc61864-03b6-464f-aa72-334c4351e042",
+        "b0446600-8eb3-43e1-9fd1-2f7b57069750",
+        "1040b31a-b386-462f-a77d-57f2f434bc28",
+        "a1ed4df7-5642-4b1f-a52c-f8a26efa5ab9",
+        "07b8f8e0-bff1-43ff-841e-818eee229073",
+        "730e9717-d0de-4eea-931c-f5673c0fc38e",
+        "0fb12652-ddd2-4194-821c-4fddbbfcec17"
+      ]
+    },
+    "3dfec62f-0c63-4064-971d-935cbcce2cb7": {
+      "id": "3dfec62f-0c63-4064-971d-935cbcce2cb7",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 2863.826086956522
+      },
+      "children": [
+        "82d4e4b6-7cba-4319-8ab0-09a35326e260",
+        "680161fd-148d-43ca-ba02-fc990a48c0df",
+        "87507f08-eb34-4ecb-8c29-558ab426b1a4",
+        "7bd895d7-30a9-465b-bef8-f97eb8c7e0e2"
+      ]
+    },
+    "1770e9aa-3b9b-4b15-b57b-86de63da7409": {
+      "id": "1770e9aa-3b9b-4b15-b57b-86de63da7409",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 311.82608695652175
+      },
+      "children": [
+        "b0ac6dcb-b502-40d3-8e82-cfcaeac682d3",
+        "b05d5942-2414-4195-9cb4-04903b4d7313",
+        "87040895-3610-4797-bd68-6e0a3f32171c",
+        "dcf4f0f2-4161-4aeb-8451-6ae27d5de9d1"
+      ]
+    },
+    "7ae2e0ac-d429-4837-8bca-5a594efa78e3": {
+      "id": "7ae2e0ac-d429-4837-8bca-5a594efa78e3",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 707.8260869565217
+      },
+      "children": [
+        "783676dc-a53b-4765-8d4d-32416dce25fb",
+        "865dbaae-2692-48d3-9058-badb9e43020d",
+        "b5d4fb91-fbd6-4dbc-8fb6-04bb05fb76de"
+      ]
+    },
+    "9bd8337e-46db-4f29-b8a7-f0f07f45a975": {
+      "id": "9bd8337e-46db-4f29-b8a7-f0f07f45a975",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 1103.8260869565217
+      },
+      "children": [
+        "02b93483-995d-4a99-85be-90116a77f60a",
+        "b9d0c3e4-a4fa-4751-8210-23312671a640",
+        "55569500-e88d-4055-8ac3-e63e722e4e01",
+        "c3ca027f-759c-405a-9162-a98e513ebeef"
+      ]
+    },
+    "d531b0bb-9565-452d-83c4-c51b5ee08457": {
+      "id": "d531b0bb-9565-452d-83c4-c51b5ee08457",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 1543.8260869565217
+      },
+      "children": [
+        "38d108ff-781f-4ff8-9e96-e70fd8e67270",
+        "dc46872d-08b5-4f68-8320-cdd88a5db383",
+        "2122bea6-cdeb-43a3-b143-45d7b80f16b7",
+        "2b2093a6-ff55-4ccf-8f7e-16e51c9cea81"
+      ]
+    },
+    "fc7d1879-404b-47ad-806c-68eb4c2543df": {
+      "id": "fc7d1879-404b-47ad-806c-68eb4c2543df",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 1939.8260869565217
+      },
+      "children": [
+        "8aa9e61c-2cac-42ec-8330-49e9567e8a84",
+        "cf70d35a-d62a-47d8-81a9-53a178f4c784",
+        "378438ea-9c03-4058-bd4c-05774234c73c"
+      ]
+    },
+    "40c71586-2cfe-47a6-9d40-9379913d043e": {
+      "id": "40c71586-2cfe-47a6-9d40-9379913d043e",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 2379.826086956522
+      },
+      "children": [
+        "fabfa802-78c1-4b92-b44c-e348e7751288",
+        "2f237dff-b296-4d01-8c70-41d37898299e",
+        "75eb0fa7-e2f6-4611-8a39-13db39574f62",
+        "dd808728-d7fa-4707-8b61-be885234b605",
+        "5c71b030-ca89-4ecf-81bc-5f6c0738fd25"
+      ]
+    },
+    "56f2ed8f-fdff-4d01-9cca-832933b9f9bc": {
+      "id": "56f2ed8f-fdff-4d01-9cca-832933b9f9bc",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": -84.17391304347825
+      },
+      "children": [
+        "59ba6dd2-f997-4bc5-bf84-681c84858bde",
+        "8b11b125-111a-4ac3-98f8-5749a1dc5d24",
+        "73645879-09b1-4667-8de2-e33ffb2af713"
+      ]
+    },
+    "0533b04e-50fe-4a81-86ee-02ff63ef724b": {
+      "id": "0533b04e-50fe-4a81-86ee-02ff63ef724b",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": 4095.826086956522
+      },
+      "children": [
+        "8f8215ac-8871-4e90-8564-fe96a02e618a",
+        "0410a15b-7a01-441d-a925-830b484ae382",
+        "27169ef1-a97e-404f-813c-e9b11627f436",
+        "27b11353-ff28-402f-8eb5-68cd36a3c055"
+      ]
+    },
+    "0410a15b-7a01-441d-a925-830b484ae382": {
+      "id": "0410a15b-7a01-441d-a925-830b484ae382",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "非常棒！为了梦想而努力赚钱吧！",
+        "isLeft": 1,
+        "aniName": "",
+        "armatureName": "",
+        "niName": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 4051.826086956522
+      }
+    },
+    "8f8215ac-8871-4e90-8564-fe96a02e618a": {
+      "id": "8f8215ac-8871-4e90-8564-fe96a02e618a",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "",
+        "opacity": 150,
+        "type": 0,
+        "isShowFinger": 0
+      },
+      "display": {
+        "x": 1228,
+        "y": 3963.826086956522
+      }
+    },
+    "27b11353-ff28-402f-8eb5-68cd36a3c055": {
+      "id": "27b11353-ff28-402f-8eb5-68cd36a3c055",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "finishGuide"
+      },
+      "display": {
+        "x": 1228,
+        "y": 4227.826086956522
+      }
+    },
+    "dd808728-d7fa-4707-8b61-be885234b605": {
+      "id": "dd808728-d7fa-4707-8b61-be885234b605",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "resumeAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 2467.826086956522
+      }
+    },
+    "5c71b030-ca89-4ecf-81bc-5f6c0738fd25": {
+      "id": "5c71b030-ca89-4ecf-81bc-5f6c0738fd25",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": "NEXT_STEP"
+      },
+      "display": {
+        "x": 1228,
+        "y": 2555.826086956522
+      }
+    },
+    "87507f08-eb34-4ecb-8c29-558ab426b1a4": {
+      "id": "87507f08-eb34-4ecb-8c29-558ab426b1a4",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "pauseAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 2907.826086956522
+      }
+    },
+    "b0446600-8eb3-43e1-9fd1-2f7b57069750": {
+      "id": "b0446600-8eb3-43e1-9fd1-2f7b57069750",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "Guide",
+        "key": "EXECUTE_FUNC",
+        "notification": "",
+        "param": "resumeAi"
+      },
+      "display": {
+        "x": 1228,
+        "y": 3347.826086956522
+      }
+    },
+    "28260010-6f52-49f0-9220-26d9030779b2": {
+      "id": "28260010-6f52-49f0-9220-26d9030779b2",
+      "name": "NGASetStep",
+      "category": "action",
+      "title": "设置引导步骤，id:<id>,step:<step>",
+      "description": "",
+      "properties": {
+        "id": 1,
+        "step": -1
+      },
+      "display": {
+        "x": 1020,
+        "y": 4315.826086956522
+      }
+    },
+    "4484d406-cb51-4452-996e-ef1ef97c8863": {
+      "id": "4484d406-cb51-4452-996e-ef1ef97c8863",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 1,
+        "str": "我是周老板，今年33岁。",
+        "imgName": "jqmh_1",
+        "labY": -220,
+        "typerAniTime": 100
+      },
+      "display": {
+        "x": 1228,
+        "y": -1316.1739130434783
+      }
+    },
+    "7fc47df9-48cd-4111-8bb8-a855467a48ab": {
+      "id": "7fc47df9-48cd-4111-8bb8-a855467a48ab",
+      "name": "MemSequence",
+      "category": "composite",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1020,
+        "y": -876.1739130434783
+      },
+      "children": [
+        "10ef4603-4641-4911-80fa-758af00b3618",
+        "4484d406-cb51-4452-996e-ef1ef97c8863",
+        "ca4f821b-b40c-4759-85f5-db69a906cd32",
+        "680841f4-7fe5-44ce-9a0a-5732afce4f45",
+        "ac275594-a220-4a18-9d3f-1ae75c283f7a",
+        "6cee635d-c42c-4ced-9da8-bd988bc1fe4e",
+        "11f5f7e5-da80-44e0-b697-d102ed540b4c",
+        "891f54d3-3c44-4bc0-83cb-575ef3c1812c",
+        "39216f03-006a-4df4-8843-a79d64b7d7e0",
+        "97acd8ee-aef3-4f51-80b2-0bd77868eba5",
+        "e8990759-08dc-4f03-8790-9e3d628bb792",
+        "88f8c45b-f5e6-475f-8263-ff148fc00122",
+        "d0dff8f7-7f68-4183-b248-554d3523943e"
+      ]
+    },
+    "10ef4603-4641-4911-80fa-758af00b3618": {
+      "id": "10ef4603-4641-4911-80fa-758af00b3618",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "",
+        "opacity": 150,
+        "type": 0
+      },
+      "display": {
+        "x": 1228,
+        "y": -1404.1739130434783
+      }
+    },
+    "ac275594-a220-4a18-9d3f-1ae75c283f7a": {
+      "id": "ac275594-a220-4a18-9d3f-1ae75c283f7a",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 1,
+        "str": "曾经在路边卖过电器，修过车",
+        "imgName": "jqmh_2",
+        "labY": -220,
+        "typerAniTime": 100
+      },
+      "display": {
+        "x": 1228,
+        "y": -1052.1739130434783
+      }
+    },
+    "891f54d3-3c44-4bc0-83cb-575ef3c1812c": {
+      "id": "891f54d3-3c44-4bc0-83cb-575ef3c1812c",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 1,
+        "str": "也当过洗碗工",
+        "imgName": "jqmh_3",
+        "labY": -220,
+        "typerAniTime": 100
+      },
+      "display": {
+        "x": 1228,
+        "y": -788.1739130434783
+      }
+    },
+    "e8990759-08dc-4f03-8790-9e3d628bb792": {
+      "id": "e8990759-08dc-4f03-8790-9e3d628bb792",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 1,
+        "str": "现在梦想是开一家烧烤店发家致富！",
+        "imgName": "jqmh_4",
+        "labY": -220,
+        "typerAniTime": 100
+      },
+      "display": {
+        "x": 1228,
+        "y": -524.1739130434783
+      }
+    },
+    "d0dff8f7-7f68-4183-b248-554d3523943e": {
+      "id": "d0dff8f7-7f68-4183-b248-554d3523943e",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 0,
+        "str": "",
+        "imgName": "",
+        "labY": "",
+        "typerAniTime": 100
+      },
+      "display": {
+        "x": 1228,
+        "y": -348.17391304347825
+      }
+    },
+    "07b8f8e0-bff1-43ff-841e-818eee229073": {
+      "id": "07b8f8e0-bff1-43ff-841e-818eee229073",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 3611.826086956522
+      }
+    },
+    "0fb12652-ddd2-4194-821c-4fddbbfcec17": {
+      "id": "0fb12652-ddd2-4194-821c-4fddbbfcec17",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 3787.826086956522
+      }
+    },
+    "a1ed4df7-5642-4b1f-a52c-f8a26efa5ab9": {
+      "id": "a1ed4df7-5642-4b1f-a52c-f8a26efa5ab9",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView/ScrollView/view/GameContent/GameView/RoleLayer/formationT",
+        "opacity": 150,
+        "type": 1,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 3523.826086956522
+      }
+    },
+    "730e9717-d0de-4eea-931c-f5673c0fc38e": {
+      "id": "730e9717-d0de-4eea-931c-f5673c0fc38e",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView/ScrollView/view/GameContent/GameView/RoleLayer/formationT",
+        "opacity": 150,
+        "type": 1,
+        "isShowFinger": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": 3699.826086956522
+      }
+    },
+    "ca4f821b-b40c-4759-85f5-db69a906cd32": {
+      "id": "ca4f821b-b40c-4759-85f5-db69a906cd32",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": -1228.1739130434783
+      }
+    },
+    "6cee635d-c42c-4ced-9da8-bd988bc1fe4e": {
+      "id": "6cee635d-c42c-4ced-9da8-bd988bc1fe4e",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": -964.1739130434783
+      }
+    },
+    "39216f03-006a-4df4-8843-a79d64b7d7e0": {
+      "id": "39216f03-006a-4df4-8843-a79d64b7d7e0",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": -700.1739130434783
+      }
+    },
+    "88f8c45b-f5e6-475f-8263-ff148fc00122": {
+      "id": "88f8c45b-f5e6-475f-8263-ff148fc00122",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": -436.17391304347825
+      }
+    },
+    "1040b31a-b386-462f-a77d-57f2f434bc28": {
+      "id": "1040b31a-b386-462f-a77d-57f2f434bc28",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 3435.826086956522
+      }
+    },
+    "27169ef1-a97e-404f-813c-e9b11627f436": {
+      "id": "27169ef1-a97e-404f-813c-e9b11627f436",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */-220\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": 1500,
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 4139.826086956522
+      }
+    },
+    "75eb0fa7-e2f6-4611-8a39-13db39574f62": {
+      "id": "75eb0fa7-e2f6-4611-8a39-13db39574f62",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": "",
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 2379.826086956522
+      }
+    },
+    "783676dc-a53b-4765-8d4d-32416dce25fb": {
+      "id": "783676dc-a53b-4765-8d4d-32416dce25fb",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "",
+        "opacity": 150,
+        "type": 0
+      },
+      "display": {
+        "x": 1228,
+        "y": 619.8260869565217
+      }
+    },
+    "73645879-09b1-4667-8de2-e33ffb2af713": {
+      "id": "73645879-09b1-4667-8de2-e33ffb2af713",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": 1500,
+        "notificationConst": ""
+      },
+      "display": {
+        "x": 1228,
+        "y": 3.826086956521749
+      }
+    },
+    "87040895-3610-4797-bd68-6e0a3f32171c": {
+      "id": "87040895-3610-4797-bd68-6e0a3f32171c",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "",
+        "opacity": 150,
+        "type": 0
+      },
+      "display": {
+        "x": 1228,
+        "y": 355.82608695652175
+      }
+    },
+    "ef452769-2cb3-45cc-80ae-a645fec6051b": {
+      "id": "ef452769-2cb3-45cc-80ae-a645fec6051b",
+      "name": "NGAHideTip",
+      "category": "action",
+      "title": "隐藏提示",
+      "description": "隐藏新手引导提示内容",
+      "properties": {},
+      "display": {
+        "x": 128.66878319367856,
+        "y": -835.486270034381
+      }
+    },
+    "680841f4-7fe5-44ce-9a0a-5732afce4f45": {
+      "id": "680841f4-7fe5-44ce-9a0a-5732afce4f45",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 1
+      },
+      "display": {
+        "x": 1228,
+        "y": -1140.1739130434783
+      }
+    },
+    "11f5f7e5-da80-44e0-b697-d102ed540b4c": {
+      "id": "11f5f7e5-da80-44e0-b697-d102ed540b4c",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 2
+      },
+      "display": {
+        "x": 1228,
+        "y": -876.1739130434783
+      }
+    },
+    "97acd8ee-aef3-4f51-80b2-0bd77868eba5": {
+      "id": "97acd8ee-aef3-4f51-80b2-0bd77868eba5",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 3
+      },
+      "display": {
+        "x": 1228,
+        "y": -612.1739130434783
+      }
+    },
+    "4c4ae6f0-575f-455d-aaaa-c79174abb836": {
+      "id": "4c4ae6f0-575f-455d-aaaa-c79174abb836",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 4
+      },
+      "display": {
+        "x": 1020,
+        "y": -260.17391304347825
+      }
+    },
+    "427ea49c-1c1e-44eb-8c70-3d02db0e1ba9": {
+      "id": "427ea49c-1c1e-44eb-8c70-3d02db0e1ba9",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 5
+      },
+      "display": {
+        "x": 1020,
+        "y": 91.82608695652175
+      }
+    },
+    "91f7954e-fdfa-4141-a3c3-0dd153f9f66f": {
+      "id": "91f7954e-fdfa-4141-a3c3-0dd153f9f66f",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 6
+      },
+      "display": {
+        "x": 1020,
+        "y": 531.8260869565217
+      }
+    },
+    "671e57cc-2380-4d47-9d19-8e7413f545dd": {
+      "id": "671e57cc-2380-4d47-9d19-8e7413f545dd",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 7
+      },
+      "display": {
+        "x": 1020,
+        "y": 883.8260869565217
+      }
+    },
+    "d038a5a3-d8ea-430d-87e0-ffa2f733bb97": {
+      "id": "d038a5a3-d8ea-430d-87e0-ffa2f733bb97",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 8
+      },
+      "display": {
+        "x": 1020,
+        "y": 1323.8260869565217
+      }
+    },
+    "dc9bd55b-a36a-4cce-82d9-b44cbf728dda": {
+      "id": "dc9bd55b-a36a-4cce-82d9-b44cbf728dda",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 9
+      },
+      "display": {
+        "x": 1020,
+        "y": 1763.8260869565217
+      }
+    },
+    "8ace58b2-1d50-4223-97b7-8dd1dfc8963a": {
+      "id": "8ace58b2-1d50-4223-97b7-8dd1dfc8963a",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 10
+      },
+      "display": {
+        "x": 1020,
+        "y": 2115.826086956522
+      }
+    },
+    "17455cc6-775e-4254-81e2-bc66d3391cec": {
+      "id": "17455cc6-775e-4254-81e2-bc66d3391cec",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 11
+      },
+      "display": {
+        "x": 1020,
+        "y": 2643.826086956522
+      }
+    },
+    "fdab326f-0f68-4e3c-9b49-cbc115cc7cb2": {
+      "id": "fdab326f-0f68-4e3c-9b49-cbc115cc7cb2",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 12
+      },
+      "display": {
+        "x": 1020,
+        "y": 3083.826086956522
+      }
+    },
+    "1dd493a8-ac2d-4f8d-825b-ba0aa90a2f5d": {
+      "id": "1dd493a8-ac2d-4f8d-825b-ba0aa90a2f5d",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 13
+      },
+      "display": {
+        "x": 1020,
+        "y": 3875.826086956522
+      }
+    }
+  },
+  "display": {
+    "camera_x": -1.0714674893797564,
+    "camera_y": 1395.8941341744685,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsHaveGuide",
+      "category": "condition",
+      "title": "是否有引导",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAHideMask",
+      "category": "action",
+      "title": "隐藏遮罩",
+      "description": "隐藏当前显示的遮罩",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAHideTip",
+      "category": "action",
+      "title": "隐藏提示",
+      "description": "隐藏新手引导提示内容",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGCCheckIsOpen",
+      "category": "condition",
+      "title": "新手引导开启条件,id:<id>",
+      "description": "检查新手能否开启\n参数：\nid：新手引导id 唯一\nheart：开启条件，爱心值达到x\ncell：开启条件，开启猫舍x\nlevel：开启条件，猫舍达到x级",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAWaitTouch",
+      "category": "action",
+      "title": "等待玩家点击,超时时间:<time>",
+      "description": "等待玩家点击,这是一个延时动作,玩家没有点击之前会返回running,\n点击后返回success\nargs:点击节点路径\ntime:超时时间,超过时间会自动返回success,单位毫秒",
+      "properties": {
+        "args": "UI_Guide/GodGuide/bg",
+        "time": 5000
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGCCheckStep",
+      "category": "condition",
+      "title": "判断引导步骤，id:<id>，step:<step>",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAShowScene",
+      "category": "action",
+      "title": "显示场景",
+      "description": "显示新手引导场景",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGCStory",
+      "category": "action",
+      "title": "选择剧情",
+      "description": "选择剧情\nstr1: string 剧情选项\nstr2: string 剧情选项\n选第一个返回成功 选第二个返回失败",
+      "properties": {
+        "str1": "",
+        "str2": ""
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAShowSkin",
+      "category": "action",
+      "title": "设置跳过按钮",
+      "description": "isShow：是否显示跳过按钮 0不显示 1显示",
+      "properties": {
+        "isShow": 1
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAScrollView",
+      "category": "action",
+      "title": "滑动主界面",
+      "description": "x: number // 滑动x距离\n        y: number, // 滑动y距离\n        time: number, // 滑动消耗时间",
+      "properties": {
+        "x": 0,
+        "y": 0,
+        "time": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGASlide",
+      "category": "action",
+      "title": "滑动手指",
+      "description": "滑动手指，收到某个事件执行下一步\n/** 移动坐标点 y1-yn */\n        x1: number,\n        /** 移动坐标点 y1-yn */\n        y1: number,\n        /** 移动所需时间 */\n        moveTime: number,\n        /** 是否循环 */\n        isLoop: number\n/** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "x1": 100,
+        "y1": 100,
+        "x2": 200,
+        "y2": 300,
+        "moveTime": 0.5,
+        "isLoop": 1,
+        "notificationConst": "ACHITEVE_EVENT"
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "EnterQueue",
+      "category": "action",
+      "title": "进入排队队列",
+      "description": "进入排队队列",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "HasEmptyPos",
+      "category": "condition",
+      "title": "是否有空闲位置",
+      "description": "当前是否拥有空白的位置",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MoveToEmptyPos",
+      "category": "action",
+      "title": "移动到空闲位置",
+      "description": "移动到空闲位置",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Sitdown",
+      "category": "action",
+      "title": "坐下",
+      "description": "顾客到达座位后,执行坐下操作,里面包含点餐的逻辑",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsWaitOrder",
+      "category": "condition",
+      "title": "是否等待点餐中",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsWaitFood",
+      "category": "condition",
+      "title": "是否等待食物中",
+      "description": "是否等待食物制作的状态",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "PlayAni",
+      "category": "action",
+      "title": "播放动画<aniName>",
+      "description": "播放某个动画\n参数:\n    aniName: string  要播放的动画名\n    playCnt: number 播放次数(0表示循环播放)\n    playTime: number 播放总时间,单位毫秒(可以不填)",
+      "properties": {
+        "playCnt": 1
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsRank",
+      "category": "condition",
+      "title": "是否排队中",
+      "description": "是否排队中",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsAngry",
+      "category": "condition",
+      "title": "是否愤怒",
+      "description": "是否愤怒状态",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MoveToNextRankPos",
+      "category": "action",
+      "title": "移动到队列下一个位置",
+      "description": "移动到队列下一个位置",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsEatting",
+      "category": "condition",
+      "title": "是否进食中",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "HasCustomerOrder",
+      "category": "condition",
+      "title": "是否有顾客等待点单",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "HasFinishOrder",
+      "category": "condition",
+      "title": "是否有烹饪好的菜式",
+      "description": "是否有烹饪好的菜式需要配送",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "HasPosNeedClean",
+      "category": "condition",
+      "title": "是否有座位需要收拾餐盘",
+      "description": "是否有座位需要收拾餐盘,座位必须收拾好顾客才可以上座",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MoveToOrder",
+      "category": "action",
+      "title": "前往给顾客下单",
+      "description": "前往给顾客下单,这个过程有可能被玩家通过点击打断",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "WaiterMove",
+      "category": "action",
+      "title": "服务员移动到: (<type>)",
+      "description": "服务员移动到某个位置",
+      "properties": {
+        "type": "送餐桌"
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "GetFood",
+      "category": "action",
+      "title": "前往并且获取配送的菜式",
+      "description": "这个动作会移动到取餐处,并且拿到需要配送的菜式",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "DeliverFood",
+      "category": "action",
+      "title": "前往送菜上桌",
+      "description": "这个动作会移动到送餐处,并且送菜上桌",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "InIdleState",
+      "category": "action",
+      "title": "服务员进入闲置状态",
+      "description": "当没有工作的时候,服务员会进入闲置状态",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "EatFinish",
+      "category": "action",
+      "title": "进食完毕",
+      "description": "顾客进食完毕",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RemoveSelf",
+      "category": "action",
+      "title": "移除自己",
+      "description": "将当前对象移除",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Move",
+      "category": "action",
+      "title": "移动到(<x>~<rx>, <y>~<ry>)",
+      "description": "随机在一定的范围内移动到某个没有障碍物的地方\n参数:\n       x\n       rx:移动的x坐标最终值为x到x+rx\n       y\n       ry:同rx\n       aniName:移动的时候播放的动画,不填默认播放Walk",
+      "properties": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MemParallel",
+      "category": "composite",
+      "title": "记忆并行节点",
+      "description": "会一次遍历完所有子节点，根据配置的返回类型返回结果,\n并行节点只有记忆节点,当子节点返回runing的时候,会记录执行顺序并且退出,下次还是会在同个节点进行执行\n退出条件 默认为0\n        0: 一个子节点成功，则返回成功，所有子节点执行失败，则返回失败\n        1: 一个子节点失败，则返回失败，所有子节点执行成功，则返回成功",
+      "properties": {
+        "type": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "CleanTable",
+      "category": "action",
+      "title": "清理餐桌",
+      "description": "服务员清理餐桌",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MoveToClearPos",
+      "category": "action",
+      "title": "前往清理桌子位置",
+      "description": "服务员前往清理桌子位置,这个动作是可以被用户操作打断的,有可能在前往的路上,就被用户手动点击餐盘清理掉",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGASpecial",
+      "category": "action",
+      "title": "发送消息(<notification><controller>-><key>-><param>)",
+      "description": "特殊动作\n通过发消息实现\ncontroller: string 模块标识 由程序给\n        key: string 唯一标识 有程序给\n        notification: string 消息唯一标识\n        param: number 额外参数",
+      "properties": {
+        "controller": "",
+        "key": "",
+        "notification": "",
+        "param": ""
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAWait",
+      "category": "action",
+      "title": "等待下一步操作(<notificationConst>-<delay>)",
+      "description": "等待多少毫秒或者等待直到收到某个消息\n        /** 延迟时间 */\n        delay: number,\n        /** 监听事件 */\n        notificationConst: string",
+      "properties": {
+        "delay": 0,
+        "notificationConst": ""
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAShowTip",
+      "category": "action",
+      "title": "显示新手引导提示: <str>",
+      "description": "显示新手引导提示:\n        /** 提示对话内容 */\n        str: string\n        /** 位置 v 表示垂直居中, b 底对齐 t 顶对齐  例如: v100表示居中对齐100像素*/\n        pos: number, \n        /** 对话框弹出动画, l :从左边弹出, r:从右边弹出 */\n        ani: string,",
+      "properties": {
+        "str": "引导对话内容",
+        "isLeft": 1
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGAShowMask",
+      "category": "action",
+      "title": "显示遮罩",
+      "description": "显示新手引导镂空遮罩\nargs:镂空节点\n/** 透明度 */\nopacity: number;\ntype 0 绘制圆形镂空, 1 绘制圆角矩形镂空",
+      "properties": {
+        "args": "Game_Main/GameMainView",
+        "opacity": 50,
+        "type": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "CheckState",
+      "category": "condition",
+      "title": "是否状态:<<state>>",
+      "description": "检查当前是在某个状态中",
+      "properties": {
+        "state": "IDLE"
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "SetState",
+      "category": "action",
+      "title": "设置状态<state>为<value>",
+      "description": "设置某个状态的值\nstate: 设置那个状态的值\nvalue: 1 表示设置对象处于这个状态中 0 与1相反",
+      "properties": {
+        "state": "IDLE",
+        "value": 1
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "StarGetFood",
+      "category": "action",
+      "title": "明星获得食物",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "IsExit",
+      "category": "condition",
+      "title": "是否离开",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Random",
+      "category": "condition",
+      "title": "<rate>概率",
+      "description": null,
+      "properties": {
+        "rate": 0.1
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGSetStory",
+      "category": "action",
+      "title": "设置剧情:<str>",
+      "description": "str: string;  //剧情内容\n imgName: string;//剧情图片\n labY: number;//对话位置\n isShow: number;//是否显示 1 显示, 0 不显示\n        /**是否播放文字打印机动画, 大于0 表示播放 具体数值为动画时间间隔, 0表示不播放 */\n        typerAniTime: number;",
+      "properties": {
+        "isShow": 1,
+        "str": "剧情内容",
+        "imgName": "jqmh_1",
+        "labY": -220,
+        "typerAniTime": 100
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGASetStep",
+      "category": "action",
+      "title": "设置引导步骤，id:<id>,step:<step>",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "NGRecodes",
+      "category": "action",
+      "title": "新手引导上传后台步骤，id：<id>，step：<step>",
+      "description": "/**新手引导步骤 */\n        id: number\n\n        /**新手引导的节点 */\n        step: number",
+      "properties": {
+        "id": 1,
+        "step": 1
+      }
+    }
+  ]
+}

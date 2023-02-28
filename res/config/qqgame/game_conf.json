@@ -1,0 +1,118 @@
+{
+	"game": {
+		/**
+		 * 顾客配置数据
+		 */
+		"customer": {
+			"speed": 5,
+			"enterRate": 0.5,
+			"nextRateEquation": "r/2",
+			"minCostTime": 0.5,
+			"maxRankCnt": 8,
+			"createCustomerBaseTime": 1000,
+			"createCustomerChangeTime": 2000,
+			"accelerateCnt": 500,
+			"eventRate": 0.1,
+			"eventAwards": [0, 1, 20]
+		},
+		"happy": {
+			"time": 45000,
+			"buff": [60001, 60002, 60003, 60004, 60005],
+			"buffValue": [200, 200, 200, 200, 200],
+			"maxValue": 10,
+			"num": 10,
+			"rate": 0.2
+		},
+		"plotEventConf": {
+			"clienteventtime": 120000,
+			"randomshowgukeevent": 0.2,
+			"chatrandom": 0,
+			"chatspeed": 1200
+		},
+		"startEventConf": {
+			"stareventtime": 120000,
+			"randnumber": 1,
+			"hideStarTime": 45000
+		},
+		"randAdBtn":{
+			"randnumber":5,
+			"addrandnum":2
+		},
+		//福袋配置
+		"gift": {
+			//钞票秒收益
+			"coin": 150,
+			//获得钻石
+			"diamond": 50
+		},
+		//玩家按厨师加速倍率
+		"chefTouchSpeedRate": 3,
+		"gametime": {
+			"zoomtime": 30,
+			"gamestarttime": 1580518800000
+		}
+
+
+	},
+	/**
+	 * 自动弹出插屏广告配置
+	 */
+	"interactionAd": {
+		/**
+		 * 在线时间超过多少后开始谈插屏广告
+		 */
+		"startShowTime": 300000,
+		/**
+		 * 插屏广告弹出间隔时间
+		 */
+		"paddingTime": 300000,
+		/**
+		 * 各个面板弹出插屏广告的概率
+		 */
+		"view": {
+			"SevenDaysView":1,
+			"IdleView":0.3,
+			"UpgradeView":0.1,
+			"ShopView":0.1,
+			"SettingView":0.1,
+			"TaskView":0.1,
+			"LuckBagView":0.1,
+			"HappyMoneyView":0.1,
+			"FriendCircleView":0.1,
+			"StartShowView":0.1
+			
+			
+		}
+	},
+	/**
+	 * 特色菜配置
+	 */
+	"featureFood": {
+		/**
+		 * 特色菜客人来访时间间隔
+		 */
+		"time": 180000,
+		/**每天可以制作多少道特色菜 */
+		"createCnt": 10
+	},
+	/**
+	 * 免费buff配置
+	 */
+	"freeBuff": {
+		//奖励的物品id
+		"itemId": 21
+	},
+	/**
+	 * 厨师自动加速buff配置
+	 */
+	"cookAutoAccelerate": {
+		//奖励的物品id
+		"itemId": 29
+	},
+
+	"serverInfos": {
+		"serverid": "ww01",
+		"interface": "https://skewer.gzqidong.cn/Qq"
+	},
+	"channel": "cjkg"
+}

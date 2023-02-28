@@ -1,0 +1,104 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "chaocaiguogai",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "chan": {
+        "props": {
+          "position": [],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "guogai": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                250,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                33,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0.5
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ],
+          "angle": []
+        }
+      },
+      "yinwu": {
+        "props": {
+          "scale": [],
+          "position": [],
+          "opacity": []
+        }
+      },
+      "guo": {
+        "props": {
+          "angle": []
+        }
+      },
+      "gq": {
+        "props": {
+          "angle": []
+        }
+      },
+      "New Sprite": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "69a709a7-8d34-4184-a820-f5f754070a56"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "props": {
+      "angle": [
+        {
+          "frame": 0,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 0.5,
+      "func": "cb3",
+      "params": []
+    }
+  ]
+}

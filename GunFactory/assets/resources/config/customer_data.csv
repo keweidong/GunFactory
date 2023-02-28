@@ -1,0 +1,16 @@
+int,int,string,string,string,int,int
+id,顾客模型,模型贴图（没有1）,名字,ai,愤怒时间（毫秒）,哪个场景开始解锁这个角色
+id,modelId,atlasAsset,name,aiFile,angryTime,unlockScene
+0,1,customer_0_tex,新手引导专用顾客,GuideCustomer,30000,0
+1,1,customer_1_tex,老伯伯,Customer,30000,3
+2,2,customer_3_tex,园艺男,Customer,30000,3
+3,3,customer_3_tex,胡渣男,Customer,30000,0
+4,4,customer_3_tex,格子男,Customer,30000,1
+5,5,customer_3_tex,包租婆,Customer,30000,0
+6,6,customer_3_tex,小学男,Customer,30000,2
+7,7,customer_3_tex,小学女,Customer,30000,2
+8,8,customer_3_tex,建筑工,Customer,30000,1
+9,9,customer_3_tex,时尚女,Customer,30000,5
+10,10,customer_3_tex,白领男,Customer,30000,5
+11,11,customer_3_tex,沙滩男,Customer,30000,4
+12,12,customer_3_tex,沙滩女,Customer,30000,4

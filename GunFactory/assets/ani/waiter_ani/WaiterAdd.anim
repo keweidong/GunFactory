@@ -1,0 +1,107 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "WaiterAdd",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "fwugx1": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "4e47e4a9-e0ef-4f58-bb61-22f1e25b8b09"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8fc5d10a-b923-47b8-9e07-33cbaf653627"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "b4d13e9d-766b-41b3-9828-ca16668b7cb6"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "09b959d1-185e-4901-b2db-8504b4177d97"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "95f6ab16-66fc-42d9-a5e6-8736d979b6c9"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "66fe5c1b-012c-45b3-9e1d-a04a1a5c2cbe"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "535ee3c4-9902-4fc6-b9ac-ac1d380b6ba4"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "de7603fe-57ab-4a7f-b864-aff55ff565b6"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "cf76b753-2074-4b6c-b42d-101b4e8c8c33"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "0549526f-3840-405c-8284-4994f481b31b"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "4e47e4a9-e0ef-4f58-bb61-22f1e25b8b09"
+                }
+              }
+            ]
+          }
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.5,
+      "func": "onEnterAniFinish",
+      "params": []
+    }
+  ]
+}

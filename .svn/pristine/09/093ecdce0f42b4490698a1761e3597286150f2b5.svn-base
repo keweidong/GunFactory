@@ -1,0 +1,15 @@
+int,int,int,string,string,string
+id,顾客模型,解锁所需爱心值,模型贴图（没有1）,名字,ai
+id,modelId,unlockCnt,atlasAsset,name,aiFile
+0,0,30,customer_0_tex,毛毛,Waiter
+1,1,250,customer_1_tex,送特色菜服务员,FeatureWaiter
+2,2,500,customer_2_tex,菜坤,Waiter
+3,3,1000,customer_3_tex,小龙,Waiter
+4,3,1000,customer_3_tex,小龙,Waiter
+5,3,1000,customer_3_tex,小龙,Waiter
+6,3,1000,customer_3_tex,小龙,Waiter
+7,3,1000,customer_3_tex,小龙,Waiter
+8,3,1000,customer_3_tex,小龙,Waiter
+9,3,1000,customer_3_tex,小龙,Waiter
+10,3,1000,customer_3_tex,小龙,Waiter
+11,3,1000,customer_3_tex,小龙,Waiter

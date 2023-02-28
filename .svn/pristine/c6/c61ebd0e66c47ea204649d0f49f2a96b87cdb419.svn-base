@@ -1,0 +1,214 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false,
+    "readonly": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "NodePoolMsr",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 12
+      }
+    ],
+    "_prefab": {
+      "__id__": 14
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "ea921/1pltP1IMObeKtfySs",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "moneyLabelAni": {
+      "__id__": 3
+    },
+    "doubleMoneyLabelAni": {
+      "__id__": 4
+    },
+    "flyLabel": {
+      "__id__": 5
+    },
+    "labelTip": {
+      "__id__": 6
+    },
+    "moneyTip": {
+      "__id__": 7
+    },
+    "itemPool": {
+      "__id__": 8
+    },
+    "tableLockNodePool": {
+      "__id__": 9
+    },
+    "orderBox": {
+      "__id__": 10
+    },
+    "gridCrossPool": {
+      "__id__": 11
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "95fbc7c0-d981-4d1b-b7f1-e238dd561158"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "518674c0-079a-48b1-b158-b88960de3c63"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "904e11b0-d1e8-446f-a3f1-98211764a30c"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "538196c2-e4f1-4e97-8783-63fb5b59c881"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": null
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "941ea4c1-020d-4edb-946d-b526861365ea"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "cf6881e9-0dc5-4d1b-a603-374a73c1e686"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "6093a395-3218-41a0-802f-2d0c0c3559c5"
+    }
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "9d4c11ad-3803-4cba-9e0f-8e8826a3909c"
+    }
+  },
+  {
+    "__type__": "ff50crhtq9DV4V3Q+o0h5Vw",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "openBoxAniPrefab": null,
+    "getItemAniPrefab": {
+      "__uuid__": "fecb1b5c-dc79-42cf-bb49-38904abd560d"
+    },
+    "openSysAniPrefab": {
+      "__uuid__": "fed4c131-9fa6-4e61-bb6e-fc2aa22024e3"
+    },
+    "frames": [
+      {
+        "__uuid__": "36dfcfe8-2cbd-489f-b79a-1f96ce2e55a1"
+      },
+      {
+        "__uuid__": "93d58c23-d62c-4cdb-a59e-a03c4b0ba96f"
+      }
+    ],
+    "getBoxLaterPrefab": null,
+    "getNewFoodAni": {
+      "__id__": 13
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "NodePool",
+    "prefab": {
+      "__uuid__": "e4d62a1c-af83-49f6-b83e-e74e374eea38"
+    }
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "798f0602-6cfe-47fa-a033-fa8c2ff1a87e"
+    },
+    "fileId": "56Ty3ZikhJa6XnO11yqTEo",
+    "sync": false
+  }
+]

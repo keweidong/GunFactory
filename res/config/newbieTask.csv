@@ -1,0 +1,25 @@
+int,string,string,int,int,int,int,int,int,int,int,int,int,int,int,string,string
+ID,名字,奖励类型（0箱1金2钻）,任务类型,完成参数,完成参数变化,奖励宝箱数量,变化量,奖励金币（秒）,变化量,奖励钻石数量,变化量,指定店铺,升到多少级,所属功能模块,消息字段,指引位置
+id,name,awardType,taskType,param,random,awardBoxNum,awardBoxRandom,awardJBNum,awardJBRandom,awardZSNum,awardZSRandom,argNum,argRandom,function_module,notification_const,location
+1,升级店铺,2,0,1,0,0,0,0,0,2,0,,,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+2,店铺1到5级,2,5,5,0,0,0,0,0,2,0,0,5,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+3,点击吉祥物,2,4,5,0,0,0,0,0,2,0,,,-1,ON_TOUCH_MACOT,Game_Main/GameMainView/ScrollView/view/GameContent/mascot/New Node
+4,店铺1到10级,2,5,10,0,0,0,0,0,2,0,0,10,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+5,点击吉祥物,2,4,5,0,0,0,0,0,2,0,,,-1,ON_TOUCH_MACOT,Game_Main/GameMainView/ScrollView/view/GameContent/mascot/New Node
+6,店铺1到15级,2,5,15,0,0,0,0,0,2,0,0,15,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+7,点击吉祥物,2,4,10,0,0,0,0,0,2,0,,,-1,ON_TOUCH_MACOT,Game_Main/GameMainView/ScrollView/view/GameContent/mascot/New Node
+8,店铺1到18级,2,5,18,0,0,0,0,0,2,0,0,18,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+9,点击吉祥物,2,4,10,0,0,0,0,0,2,0,,,-1,ON_TOUCH_MACOT,Game_Main/GameMainView/ScrollView/view/GameContent/mascot/New Node
+10,店铺1到24级,2,5,24,0,0,0,0,0,2,0,0,24,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+11,点击队伍加速,2,3,5,0,0,0,0,0,2,0,,,-1,ON_TOUCH_ACCELERATE,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/point
+12,店铺1到27级,2,5,27,0,0,0,0,0,2,0,0,27,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+13,点击队伍加速,2,3,5,0,0,0,0,0,2,0,,,-1,ON_TOUCH_ACCELERATE,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/point
+14,店铺1到30级,2,5,30,0,0,0,0,0,2,0,0,30,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/touchNode
+15,解锁店铺2,2,6,1,0,0,0,0,0,2,0,1,,-1,unlockShaft,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell1/lock/lockIcon
+16,店铺2到5级,2,5,5,0,0,0,0,0,2,0,1,5,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell1/touchNode
+17,点击队伍加速,2,3,10,0,0,0,0,0,2,0,,,-1,ON_TOUCH_ACCELERATE,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/point
+18,店铺2到10级,2,5,3,0,0,0,0,0,2,0,1,10,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell1/touchNode
+19,升级任意店铺,2,0,5,0,0,0,0,0,2,0,,,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell1/touchNode
+20,点击队伍加速,2,3,10,0,0,0,0,0,2,0,,,-1,ON_TOUCH_ACCELERATE,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell0/point
+21,外卖送货,2,2,1,0,0,0,0,0,2,0,,,-1,DELIVERYMAN_GET_ORDER,UI_Main/GameUIView/FreeDiaBtn
+22,升级任意店铺,2,0,10,0,0,0,0,0,2,0,,,-1,g2cUpgrade,Game_Main/GameMainView/ScrollView/view/GameContent/CellGroup/cell1/touchNode

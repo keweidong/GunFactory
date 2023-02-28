@@ -1,0 +1,203 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Gongxihuode2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.3666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "opacity": []
+    },
+    "paths": {
+      "light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 360
+            }
+          ]
+        }
+      },
+      "caidai": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 185.848
+            },
+            {
+              "frame": 0.65,
+              "value": 210
+            },
+            {
+              "frame": 1.35,
+              "value": 185.848
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "cash": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "cxyw": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 15
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 205
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 205.845
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 206
+            }
+          ]
+        }
+      },
+      "gxhd": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 204.96
+            },
+            {
+              "frame": 0.65,
+              "value": 220
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 204.96
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -6.817
+            }
+          ]
+        }
+      },
+      "jbdb": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "gkgg": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      },
+      "New Label": {
+        "props": {
+          "scale": []
+        }
+      }
+    }
+  },
+  "events": []
+}

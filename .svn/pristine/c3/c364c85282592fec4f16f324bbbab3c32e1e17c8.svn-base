@@ -1,0 +1,144 @@
+import App from "../../core/App";
+import BaseScene from "../../core/BaseScene";
+import { TimerManager } from "../../core/utils/TimeManager";
+import { ControllerConst } from "../consts/ControllerConst";
+import { NotificationConst } from "../consts/NotificationConst";
+import { ViewConst } from "../consts/ViewConst";
+import ActivityController from "../module/Activity/ActivityController";
+import { ADController } from "../module/AD/ADController";
+import BagController from "../module/bag/BagController";
+import PlotEventController from '../module/event/PlotEventController';
+import FriendCircleController from '../module/FriendCircle/FriendCircleController';
+import GameController from "../module/GameMain/GameController";
+import { GameUtils } from "../module/GameMain/GameUtils";
+import Reslist from "../module/GameMain/Reslist";
+import { TIPSTATE } from "../module/GameUI/GameUIConst";
+import GameUIController from "../module/GameUI/GameUIController";
+import GuideController from "../module/guide/GuideController";
+import { GuideConst } from "../module/guide/GuideModel";
+import HappyController from "../module/Happy/HappyController";
+import NodePoolMsr from "../module/NodePoolMsr";
+import SevenDaysController from "../module/SevenDays/SevenDaysController";
+import ShopController from "../module/Shop/ShopController";
+import StartEventController from '../module/StartEvent/StartEventController';
+import SystemOpenController from "../module/SystemOpen/SystemOpenController";
+import TaskController from "../module/Task/TaskController";
+import GameRecorderController from "../../game/module/ToutiaoGameRecorder/GameRecorderController";
+import UserLevelController from "../module/UserLevel/UserLevelController";
+import { Platform } from "../platform/Platform";
+import { SceneTag } from "./SceneConst";
+import AchievementController from "../module/Achievement/AchievementController";
+import ExploreController from "../module/Explore/ExploreController";
+import { GameText } from "../../core/lang/GameText";
+const { ccclass, property } = cc._decorator;
+// cc.dynamicAtlasManager.showDebug(true);
+//修改按钮的_onTouchEnded方法,自动给点击增加一个声音
+let _onTouchEnded = cc.Button.prototype._onTouchEnded;
+cc.Button.prototype._onTouchEnded = function (event) {
+    _onTouchEnded.call(this, event);
+    if (this.isNotPlayClickBtn) {
+        return
+    }
+    if (this.isNotOpen) {
+        App.SoundManager.playEffect("ban");
+    }
+    else {
+        App.SoundManager.playEffect("clickBtn");
+    }
+}
+@ccclass
+export default class GameScene extends BaseScene {
+    protected timerManager: TimerManager;
+    protected gameTimer: TimerManager;
+    public reslistPrefab: cc.Prefab = null;
+    public reslist: Reslist = null;
+    /**预加载资源是否加载完毕 */
+    protected isPreResLoad: boolean;
+    public sceneName: string = SceneTag.GAME;
+    @property(cc.Prefab)
+    public nodePoolMsrPrefab: cc.Prefab = null;
+    public nodePoolMsr: NodePoolMsr = null;
+    onEnter() {
+        super.onEnter();
+        if (cc.winSize.width / cc.winSize.height > 0.57) {
+            this.node.getComponent(cc.Canvas).fitHeight = true;
+        }
+        // if(cc.director)
+        // 
+        // this.nodePoolMsr = this.nodePoolMsrPrefab.data.getComponent(NodePoolMsr);
+        // let curSceneId = 0;
+
+        // if (App.GameDataMsr.gameMainData) {
+        //     curSceneId = App.GameDataMsr.gameMainData.nowId;
+        // }
+
+        // this.loadResList(curSceneId);
+        this.initModule();
+
+        App.DebugUtils.stop("进入游戏")
+    }
+    /**
+     * 安卓返回键回调
+     */
+    protected onKeyBack(event) {
+        let isGuideFinish = App.ControllerManager.applyFunc(ControllerConst.Guide, GuideConst.CHECK_IS_GUIDE, 1);
+        if (isGuideFinish) {
+            App.ViewManager.open(ViewConst.TipView, {
+                curState: TIPSTATE.SURE,
+                leftBtnText: GameText.getText(lang.common_sure), //"确定",
+                hasCloseBtn: true,
+                leftFunc: () => {
+                    Log.trace("退出游戏");
+                    Platform.instance.saveData();
+                    Platform.instance.exitGame();//退出游戏
+                },
+                leftThisObj: this,
+                tipsStr: GameText.getText(lang.common_exit_tip),//`是否退出游戏!`,
+            } as COMMON_BOX);
+        }
+
+    }
+    start() {
+        super.start();
+        this.gameTimer = GameUtils.TimerManager = new TimerManager();
+        App.TimerManager.setFrameOut(1, () => {
+            App.NotificationCenter.dispatch(NotificationConst.INIT_GAME);
+        }, this);
+
+    }
+    /**
+    * 初始化所有模块
+    */
+    private initModule(): void {
+        App.ControllerManager.register(ControllerConst.GameUI, GameUIController);
+        App.ControllerManager.register(ControllerConst.Game, GameController);
+        App.ControllerManager.register(ControllerConst.Item, BagController);
+        App.ControllerManager.register(ControllerConst.AD, ADController);
+
+        App.ControllerManager.register(ControllerConst.HappyTime, HappyController);
+        App.ControllerManager.register(ControllerConst.UserLevel, UserLevelController);
+        App.ControllerManager.register(ControllerConst.Task, TaskController);
+        // App.ControllerManager.register(ControllerConst.Food, FoodController);
+        App.ControllerManager.register(ControllerConst.Shop, ShopController);
+        // App.ControllerManager.register(ControllerConst.Event, EventController);
+        // // App.ControllerManager.register(ControllerConst.Luck, LuckController);
+        App.ControllerManager.register(ControllerConst.Guide, GuideController);
+        App.ControllerManager.register(ControllerConst.SystemOpen, SystemOpenController)
+        // App.ControllerManager.register(ControllerConst.Rank, RankController);
+        App.ControllerManager.register(ControllerConst.SevenDays, SevenDaysController);
+        // App.ControllerManager.register(ControllerConst.Notice, NoticeController);
+        App.ControllerManager.register(ControllerConst.Activity, ActivityController);
+        App.ControllerManager.register(ControllerConst.FriendCircle, FriendCircleController);
+        App.ControllerManager.register(ControllerConst.PlotEvent, PlotEventController);
+        App.ControllerManager.register(ControllerConst.Start, StartEventController);
+        App.ControllerManager.register(ControllerConst.Achievement, AchievementController);
+        App.ControllerManager.register(ControllerConst.Explore, ExploreController);
+        if (cc.sys.platform == cc.sys.TOUTIAO_GAME) {//头条录屏
+            App.ControllerManager.register(ControllerConst.GameRecorder, GameRecorderController);
+        }
+    }
+    update(dt) {
+        this.timerManager.onEnterFrame(dt);
+        this.gameTimer.onEnterFrame(dt);
+    }
+}

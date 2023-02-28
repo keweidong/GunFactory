@@ -1,0 +1,1 @@
+(qdtool csv -s ./language -m -t ../GunFactory/assets/Script/langs/)&&(qdtool mergeimg -s ./language --target ../../GunFactory/assets/resources/language)&&(qdtool mergeimg -s ./config --target ../../GunFactory/assets/resources/config)

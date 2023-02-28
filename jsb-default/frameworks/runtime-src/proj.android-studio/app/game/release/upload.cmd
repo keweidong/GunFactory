@@ -1,0 +1,1 @@
+coscmd upload ./GunFactory_1.0.0_game.apk /GunFactory/GunFactory_1_0_0.apk

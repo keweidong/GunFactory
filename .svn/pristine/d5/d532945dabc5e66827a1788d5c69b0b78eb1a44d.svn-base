@@ -1,0 +1,9 @@
+int,string,string
+buff_index,描述,buff_type
+buff_index,desc,buff_type
+60001,服务员速度（超级加速）,WAITER_SPEED
+60002,烹饪速度（超级加速）,COOK_SPEED
+60003,客人出现速度（超级加速）,CUSTOMER_CREATE_TIME
+60004,客人移动速度（超级加速）,MOVE_SPEED
+60005,菜式收益倍率,FOOD_SELL_RATE
+60006,厨师自动加速buff,COOK_ACCELERATE

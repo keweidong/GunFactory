@@ -1,0 +1,1 @@
+// export const UPGRADE_BTN_LABEL_COLOR = cc.color();
